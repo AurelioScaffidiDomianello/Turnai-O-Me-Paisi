@@ -1781,14 +1781,14 @@ Error generating stack: `+ o.message + `
           text-shadow: 0 1px 0 #FFFEF7, 0 2px 10px rgba(184,134,11,0.35), 0 0 22px rgba(212,175,55,0.5);
         }
         @media (max-width: 640px) {
-          .ebook-body { font-size: 18.5px; line-height: 1.88; letter-spacing: 0.015em; }
-          .dropcap-oro { font-size: 3.6em; line-height: 0.85; margin-right: 0.2em; margin-bottom: 0.12em; }
-          .chapter-title-oro { font-size: 17.5px; }
-          .page-content { min-height: 70vh; max-height: 80vh; padding-bottom: 120px; margin-bottom: 12px; }
-          .chapter-page { padding-bottom: 120px !important; }
-          .ringraziamenti-crema-page { padding-bottom: 120px !important; }
-          .ringraziamenti-crema-content { min-height: 70vh; max-height: 80vh; padding-bottom: 120px; }
-          .page-number-abs { bottom: 26px; }
+          .ebook-body { font-size: clamp(14.5px, 4vw, 16px); line-height: 1.55; letter-spacing: 0.01em; }
+          .dropcap-oro { font-size: 3.2em; line-height: 0.80; margin-right: 0.15em; margin-bottom: 0.08em; }
+          .chapter-title-oro { font-size: 16px; }
+          .page-content { min-height: auto; max-height: none; padding-bottom: 45px !important; margin-bottom: 6px; }
+          .chapter-page { padding-bottom: 45px !important; padding-top: 10px !important; }
+          .ringraziamenti-crema-page { padding-bottom: 45px !important; }
+          .ringraziamenti-crema-content { min-height: auto; max-height: none; padding-bottom: 45px !important; }
+          .page-number-abs { bottom: 10px; }
         }
       `}), m("div", {className: "h-[3px] w-full bg-gradient-to-r from-[#8B6F47] via-[#D4AF37] to-[#8B6F47] shrink-0 z-30"}), Q("header", {
             className: "shrink-0 h-[52px] md:h-[58px] flex items-center justify-between px-2.5 md:px-5 bg-[#FFFEF7]/95 backdrop-blur border-b border-[#D4AF37]/15 overflow-hidden gap-2", children: [Q("button", {onClick: () => K(0), className: "flex items-center gap-1.5 text-[11px] tracking-[0.18em] uppercase font-medium px-2.5 py-1.5 rounded-full border border-transparent hover:border-[#D4AF37]/30 hover:bg-[#D4AF37]/10 transition-colors shrink-0", style: {fontFamily: "Cinzel, serif", color: "#8B6F47"}, children: [m(sr, {size: 14}), " ", m("span", {className: "hidden sm:inline", children: "Copertina"}), m("span", {className: "sm:hidden", children: "Home"})]}), m("div", {className: "flex-1 flex justify-center items-center min-w-0 mx-1", children: m("div", {className: "text-[9px] md:text-[11px] tracking-[0.18em] uppercase truncate max-w-[42vw] md:max-w-[36vw] text-center", style: {fontFamily: "Cinzel", color: "#8B6F47"}, children: k ? `TURNAI ’O ME PAISI — ${d.length} pg` : y ? "DEDICA — Pag. 5" : D ? `RINGRAZIAMENTI ${c.pageInChapter}/${c.totalInChapter}` : T ? `FINALE — Pag. ${d.length}` : `Cap. ${c.roman} · ${c.pageInChapter}/${c.totalInChapter}`})}), Q("div", {
